@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+
+    background: #F1F3F7 !important;
+    touch-action: manipulation;
+
+}
+*{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.photo{
+  width:100px;
+  height:100px;
+  position: relative;
+border:1px solid black
+}
+.icon{
+  position: absolute;
+  top:-13%;
+  color: rgb(255, 255, 255);
+  right:-10%;
+  height: 30px;
+  width: 30px;
+  background: black;
+}
+.photosrc{
+  width:100%;
+  height:100%;
+  position:absolute;
+  flex-shrink: 0;
+  object-fit:cover
+}
+select,input{
+  background-color: white !important;
+
+}
+.search-input{
+  background-color: transparent !important;
+}
+.noscroll::-webkit-scrollbar{
+  display: none;
+}
+.anime{
+  transition: 0.8s ease;
+}
+
+.custom input,
+.custom select{
+  width:100% !important;
+  box-shadow: 0 0 3px 1px #F1F3F7;
+}
+.noscroll input,
+.noscroll select{
+  box-shadow: 0 0 3px 1px #F1F3F7 !important;
+}
+.searchinput input{
+  box-shadow: none !important;
+}
+.active{
+  box-shadow:inset 0 0 3px 1px #07070798 !important;
+  transform:scale(0.8) !important;
+}
+.active-text{
+  transform:scale(0.8) !important;
+}
+.textarea{
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 150px;
+  max-height: 150px;
+}
+.product-img{
+  overflow: hidden;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    word-wrap: break-word;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+   
+}

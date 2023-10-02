@@ -1,0 +1,12 @@
+GET https://project-zkdc.onrender.com/products
+###Post metodu
+POST https://project-zkdc.onrender.com/products
+###Get id
+
+GET  http://localhost:3001/products/id
+
+###Putch metodu
+PATCH   http://localhost:3001/products/id
+
+###Delete metodu
+DELETE   http://localhost:3001/abc_xyz
