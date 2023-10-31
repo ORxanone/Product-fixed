@@ -11,7 +11,7 @@ router.post('/',(req,res,next)=>{
 email:req.body.email,
         password:req.body.password
     })
-    console.log(req.body);
+    console.log("req.body", req.body);
     user.save()
     .then(result=>{
         console.log(result);
